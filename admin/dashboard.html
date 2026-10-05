@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Admin Dashboard</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+<div class="dashboard">
+  <aside class="sidebar">
+    <div class="brand">🎮 Gaming Portal</div><p class="role">ADMIN</p>
+    <a class="active" href="dashboard.html">📊 Dashboard</a>
+    <a href="games.html">🎮 Games</a><a href="users.html">👥 Users</a><a href="scores.html">🏆 Scores</a>
+    <button id="logoutBtn" class="side-logout">Logout</button>
+  </aside>
+  <main class="content">
+    <div class="page-head"><div><p class="eyebrow">ADMIN MODULE</p><h1>Dashboard</h1><p>Manage the Gaming Portal.</p></div></div>
+    <section class="stats">
+      <article class="stat card"><span>👥</span><div><small>Total Users</small><strong id="totalUsers">0</strong></div></article>
+      <article class="stat card"><span>🎮</span><div><small>Total Games</small><strong id="totalGames">0</strong></div></article>
+      <article class="stat card"><span>🏆</span><div><small>Total Scores</small><strong id="totalScores">0</strong></div></article>
+      <article class="stat card"><span>⭐</span><div><small>Highest Score</small><strong id="highestScore">0</strong></div></article>
+    </section>
+    <section class="card">
+      <h2>Quick Actions</h2>
+      <div class="quick-grid">
+        <a class="quick" href="games.html">➕ Manage Games</a>
+        <a class="quick" href="users.html">👥 Manage Users</a>
+        <a class="quick" href="scores.html">🏆 View Scores</a>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="../js/admin.js"></script>
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Manage Games</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css"></head>
+<body>
+<div class="dashboard">
+<aside class="sidebar"><div class="brand">🎮 Gaming Portal</div><p class="role">ADMIN</p>
+<a href="dashboard.html">📊 Dashboard</a><a class="active" href="games.html">🎮 Games</a><a href="users.html">👥 Users</a><a href="scores.html">🏆 Scores</a>
+<button id="logoutBtn" class="side-logout">Logout</button></aside>
+<main class="content"><div class="page-head"><div><p class="eyebrow">ADMIN MODULE</p><h1>Game Management</h1></div></div>
+<section class="card">
+<h2 id="formTitle">Add Game</h2>
+<form id="gameForm" class="form-grid">
+<input type="hidden" id="gameId">
+<label>Game Name<input id="gameName" required></label>
+<label>Category<input id="gameCategory" required placeholder="Arcade"></label>
+<label>Difficulty<select id="gameDifficulty"><option>Easy</option><option>Medium</option><option>Hard</option></select></label>
+<label>Icon<input id="gameIcon" required value="🎮"></label>
+<label class="wide">Description<textarea id="gameDescription" required></textarea></label>
+<div class="wide actions"><button class="btn" type="submit">Save Game</button><button class="btn secondary" type="button" id="cancelEdit">Clear</button></div>
+</form><p id="gameMessage" class="message"></p></section>
+<section class="card"><h2>Available Games</h2><div id="gameTable" class="table-wrap"></div></section>
+</main></div>
+<script src="../js/admin.js"></script></body></html>

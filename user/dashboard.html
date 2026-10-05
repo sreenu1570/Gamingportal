@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>User Dashboard</title><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css"></head>
+<body>
+<div class="dashboard">
+<aside class="sidebar"><div class="brand">🎮 Gaming Portal</div><p class="role">USER</p>
+<a class="active" href="dashboard.html">🏠 Dashboard</a><a href="games.html">🎮 Games</a><a href="leaderboard.html">🏆 Leaderboard</a><a href="profile.html">👤 Profile</a>
+<button id="logoutBtn" class="side-logout">Logout</button></aside>
+<main class="content">
+<div class="page-head"><div><p class="eyebrow">USER MODULE</p><h1 id="welcome">Welcome!</h1><p>Choose a game and start playing.</p></div></div>
+<section class="stats">
+<article class="stat card"><span>🎮</span><div><small>Games</small><strong id="gameCount">0</strong></div></article>
+<article class="stat card"><span>🏆</span><div><small>My Best Score</small><strong id="myBest">0</strong></div></article>
+<article class="stat card"><span>🎯</span><div><small>My Plays</small><strong id="myPlays">0</strong></div></article>
+</section>
+<section class="card"><h2>Available Games</h2><div id="gameCards" class="game-grid"></div></section>
+</main></div><script src="../js/user.js"></script></body></html>
